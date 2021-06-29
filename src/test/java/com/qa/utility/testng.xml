@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.qa.utility.Reporting"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <parameter name="Browser" value="Chrome"></parameter>
+  <parameter name="Url" value="https://paytmmall.com/"></parameter>
+    <classes>
+      <class name="com.qa.test.TC_PaytmMall"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
